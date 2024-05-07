@@ -1,3 +1,4 @@
+@Regression
 Feature: Create an Account from home page.
     Background:
 
@@ -5,7 +6,7 @@ Feature: Create an Account from home page.
 
 
     Scenario: create an account
-    And User validates page Title  {String}
+        And User validates page Title as Expected “Create Primary Account Holder”
 
     Scenario: create an account by filling up the form using List of map data table
     When User fill out Create Account Form

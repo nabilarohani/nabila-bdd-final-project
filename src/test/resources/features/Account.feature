@@ -1,4 +1,4 @@
-@Smoke
+@Regression
 
 Feature: Navigate to Accounts and verify 5 rows as default
 

@@ -2,7 +2,7 @@ Feature: Profile Functionality
 
   Background:
     Given Click on Login Button
-    When Enter Username Value "supervisor" and Password Value "tek_supervisor"
+    Then Login with valid username "supervisor" and password "tek_supervisor"
     And Click on Sign in button
     And Click on profile button on top right corner
 

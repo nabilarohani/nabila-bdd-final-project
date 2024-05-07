@@ -19,13 +19,13 @@ public class LoginSteps extends SeleniumUtilities {
     }
 
 
-    @Given("Login with valid username {string} and password {string}")
-
-    public void Login_with_valid_username_and_password(String username, String password) throws InterruptedException {
+    @Then("Login with valid username {string} and password {string}")
+    public void login_with_valid_username_and_password(String username , String password)
+ {
         sendText(LoginPage.USERNAME_INPUT, "supervisor345");
-        Thread.sleep(1000);
+
         sendText(LoginPage.PASSWORD_INPUT, "tek_supervisor");
-        Thread.sleep(4000);
+
     }
 
     @Given("Click on Sign in button")

@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "classpath:features",
         glue = "TEK.BDD.FINALPROJECT.STEPS",
-        tags = "@Smoke",
+        tags = "@Regression",
         dryRun = false,
         plugin = {
                 "pretty",

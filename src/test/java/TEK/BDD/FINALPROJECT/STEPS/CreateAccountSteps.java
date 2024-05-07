@@ -28,14 +28,14 @@ public class CreateAccountSteps extends SeleniumUtilities {
         clickOnElement(AccountProfilePage.CreatePrimaryAccountButton);
         Thread.sleep(2000);
     }
-    @And("User validates page Title Create Primary Account Holder" )
-            public void PrimaryAccountTitle() throws InterruptedException {
-            getElementText(AccountProfilePage.ProfileTextName);
+    @And("User validates page Title as Expected “Create Primary Account Holder”")
+    public void PrimaryAccountTitle() {
+        getElementText(AccountProfilePage.ProfileTextName);
+        String actualTitle = getElementText(AccountProfilePage.ProfileTextName);
+        System.out.println(actualTitle);
+        Assert.assertEquals("Create Primary Account Holder", actualTitle);
+    }
 
-            String actualTitle = getElementText(AccountProfilePage.ProfileTextName);
-            System.out.println(actualTitle);
-            Assert.assertEquals("Create Primary Account Holder" ,actualTitle);
-}
 
     @When("User fill out Create Account Form")
     public void FillCreateAccountForm(DataTable dataTable) throws InterruptedException {
